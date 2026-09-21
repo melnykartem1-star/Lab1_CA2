@@ -1,0 +1,74 @@
+    1  uname -a
+    2  sudo apt update && sudo apt upgrade -y
+    3  cat /etc/apt/sources.list.d/ubuntu.sources
+    4  sudo apt install vim -y
+    5  cd ~
+    6  cd ~/Downloads
+    7  man ls
+    8  ls -l
+    9  dpkg -i package.deb
+   10  sudo dpkg -i package.deb
+   11  cd ~
+   12  sudo su
+   13  echo "hi all"
+   14  echo "$PWD hi all here!"
+   15  touch hi.sh
+   16  echo $PATH
+   17  vi hi.sh
+   18  ./hi.sh
+   19  chmod a+x hi.sh
+   20  chmod a+rwx hi.sh
+   21  ./hi.sh
+   22  ./hi.sh Ukraine
+   23  cp hi.sh scripts/
+   24  cp scripts Documents/
+   25  cp -r scripts Documents/
+   26  cd scripts
+   27  mv hi.sh ../
+   28  cd ..
+   29  rm scripts
+   30  rm -r scripts
+   31  cd /bin
+   32  ls -l
+   33  cd ../..
+   34  cd ~ && mkdir scripts && tar -cvf scripts.tar scripts/
+   35  cat hi.sh
+   36  cat /var/log/syslog
+   37  tail -n 20 /var/log/syslog
+   38  less /var/log/syslog
+   39  cd /
+   40  find . -name "dhcp"
+   41  find . -name "*dhcp*"
+   42  find . -name "*dhcp*" | grep -i "dhcp"
+   43  find . -name "*dhcp*" | grep -i "etc"
+   44  ping google.com
+   45  ping google.com > ping.log &
+   46  sudo ping google.com > ~/sudo_ping.log &
+   47  totem
+   48  ls -l
+   49  cd /bin
+   50  ls
+   51  echo $PATH
+   52  printenv
+   53  whoami
+   54  cd /etc
+   55  ls
+   56  cd ..
+   57  cd lib
+   58  ls
+   59  dmesg
+   60  sudo dmesg
+   61  ls /dev
+   62  sudo dmesg -c
+   63  sudo dmesg
+   64  df -h
+   65  cd /home
+   66  ls -l
+   67  lsmod
+   68  cd /proc
+   69  cat cpuinfo
+   70  echo 1 > /proc/sys/net/ipv4/ip_forward
+   71  sudo echo 1 > /proc/sys/net/ipv4/ip_forward
+   72  sudo su
+   73  cd ~ && date && history > history.txt
+
